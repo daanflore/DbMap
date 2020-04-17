@@ -66,56 +66,56 @@ Tiny benchmark, query 1 row of 1 string column using 1 parameter
 ``` ini
 |                 Method |      Mean |     Error |    StdDev | Ratio | RatioSD |
 |----------------------- |----------:|----------:|----------:|------:|--------:|
-|         EFCoreLinqTiny | 378.73 µs | 14.602 µs | 32.051 µs |  3.77 |    0.34 |
-| EFCoreInterpolatedTiny | 295.35 µs | 10.352 µs | 22.723 µs |  2.93 |    0.23 |
-|          EFCoreRawTiny | 295.40 µs | 11.132 µs | 24.898 µs |  2.97 |    0.24 |
-| EFCoreCompliedLinqTiny | 168.56 µs |  1.652 µs |  3.484 µs |  1.68 |    0.04 |
-|             DapperTiny | 144.21 µs |  1.178 µs |  2.560 µs |  1.43 |    0.03 |
-|             RepoDbTiny | 110.61 µs |  0.503 µs |  1.039 µs |  1.10 |    0.02 |
-|              DbMapTiny | 100.54 µs |  0.779 µs |  1.591 µs |  1.00 |    0.00 |
-|        HandwrittenTiny |  99.64 µs |  0.360 µs |  0.752 µs |  0.99 |    0.02 |
+|         EFCoreLinqTiny | 378.73 Âµs | 14.602 Âµs | 32.051 Âµs |  3.77 |    0.34 |
+| EFCoreInterpolatedTiny | 295.35 Âµs | 10.352 Âµs | 22.723 Âµs |  2.93 |    0.23 |
+|          EFCoreRawTiny | 295.40 Âµs | 11.132 Âµs | 24.898 Âµs |  2.97 |    0.24 |
+| EFCoreCompliedLinqTiny | 168.56 Âµs |  1.652 Âµs |  3.484 Âµs |  1.68 |    0.04 |
+|             DapperTiny | 144.21 Âµs |  1.178 Âµs |  2.560 Âµs |  1.43 |    0.03 |
+|             RepoDbTiny | 110.61 Âµs |  0.503 Âµs |  1.039 Âµs |  1.10 |    0.02 |
+|              DbMapTiny | 100.54 Âµs |  0.779 Âµs |  1.591 Âµs |  1.00 |    0.00 |
+|        HandwrittenTiny |  99.64 Âµs |  0.360 Âµs |  0.752 Âµs |  0.99 |    0.02 |
 ```
 
-Extra small benchmark, query 1 row of 6 solumns using 1 parameter
+Extra small benchmark, query 1 row of 6 columns using 1 parameter
 ``` ini
 |                       Method |     Mean |    Error |   StdDev | Ratio | RatioSD |
 |----------------------------- |---------:|---------:|---------:|------:|--------:|
-|         EFCoreLinqExtraSmall | 348.8 µs | 13.48 µs | 29.59 µs |  3.40 |    0.31 |
-| EFCoreInterpolatedExtraSmall | 286.7 µs |  7.17 µs | 15.88 µs |  2.80 |    0.17 |
-|          EFCoreRawExtraSmall | 279.4 µs |  5.84 µs | 12.57 µs |  2.73 |    0.14 |
-| EFCoreCompliedLinqExtraSmall | 173.1 µs |  1.79 µs |  3.85 µs |  1.69 |    0.05 |
-|             DapperExtraSmall | 151.6 µs |  1.08 µs |  2.34 µs |  1.48 |    0.03 |
-|             RepoDbExtraSmall | 123.6 µs |  1.17 µs |  2.45 µs |  1.21 |    0.03 |
-|              DbMapExtraSmall | 102.5 µs |  0.80 µs |  1.66 µs |  1.00 |    0.00 |
-|        HandwrittenExtraSmall | 102.0 µs |  0.48 µs |  1.06 µs |  1.00 |    0.02 |
+|         EFCoreLinqExtraSmall | 348.8 Âµs | 13.48 Âµs | 29.59 Âµs |  3.40 |    0.31 |
+| EFCoreInterpolatedExtraSmall | 286.7 Âµs |  7.17 Âµs | 15.88 Âµs |  2.80 |    0.17 |
+|          EFCoreRawExtraSmall | 279.4 Âµs |  5.84 Âµs | 12.57 Âµs |  2.73 |    0.14 |
+| EFCoreCompliedLinqExtraSmall | 173.1 Âµs |  1.79 Âµs |  3.85 Âµs |  1.69 |    0.05 |
+|             DapperExtraSmall | 151.6 Âµs |  1.08 Âµs |  2.34 Âµs |  1.48 |    0.03 |
+|             RepoDbExtraSmall | 123.6 Âµs |  1.17 Âµs |  2.45 Âµs |  1.21 |    0.03 |
+|              DbMapExtraSmall | 102.5 Âµs |  0.80 Âµs |  1.66 Âµs |  1.00 |    0.00 |
+|        HandwrittenExtraSmall | 102.0 Âµs |  0.48 Âµs |  1.06 Âµs |  1.00 |    0.02 |
 ```
 
 Small benchmark, query 10 rows of 6 columns using 1 parameter
 ``` ini
 |                  Method |     Mean |    Error |   StdDev |   Median | Ratio | RatioSD |
 |------------------------ |---------:|---------:|---------:|---------:|------:|--------:|
-|         EFCoreLinqSmall | 382.8 µs | 16.13 µs | 35.40 µs | 381.4 µs |  3.27 |    0.28 |
-| EFCoreInterpolatedSmall | 279.5 µs |  4.84 µs | 10.10 µs | 278.0 µs |  2.36 |    0.09 |
-|          EFCoreRawSmall | 283.5 µs |  9.54 µs | 21.35 µs | 281.6 µs |  2.39 |    0.18 |
-| EFCoreCompliedLinqSmall | 201.2 µs |  3.38 µs |  7.42 µs | 203.9 µs |  1.70 |    0.06 |
-|             DapperSmall | 173.0 µs |  1.84 µs |  3.95 µs | 173.5 µs |  1.46 |    0.04 |
-|             RepoDbSmall | 128.1 µs |  0.97 µs |  2.00 µs | 127.9 µs |  1.08 |    0.02 |
-|              DbMapSmall | 118.3 µs |  0.53 µs |  1.12 µs | 118.1 µs |  1.00 |    0.00 |
-|        HandwrittenSmall | 115.7 µs |  0.43 µs |  0.90 µs | 115.6 µs |  0.98 |    0.01 |
+|         EFCoreLinqSmall | 382.8 Âµs | 16.13 Âµs | 35.40 Âµs | 381.4 Âµs |  3.27 |    0.28 |
+| EFCoreInterpolatedSmall | 279.5 Âµs |  4.84 Âµs | 10.10 Âµs | 278.0 Âµs |  2.36 |    0.09 |
+|          EFCoreRawSmall | 283.5 Âµs |  9.54 Âµs | 21.35 Âµs | 281.6 Âµs |  2.39 |    0.18 |
+| EFCoreCompliedLinqSmall | 201.2 Âµs |  3.38 Âµs |  7.42 Âµs | 203.9 Âµs |  1.70 |    0.06 |
+|             DapperSmall | 173.0 Âµs |  1.84 Âµs |  3.95 Âµs | 173.5 Âµs |  1.46 |    0.04 |
+|             RepoDbSmall | 128.1 Âµs |  0.97 Âµs |  2.00 Âµs | 127.9 Âµs |  1.08 |    0.02 |
+|              DbMapSmall | 118.3 Âµs |  0.53 Âµs |  1.12 Âµs | 118.1 Âµs |  1.00 |    0.00 |
+|        HandwrittenSmall | 115.7 Âµs |  0.43 Âµs |  0.90 Âµs | 115.6 Âµs |  0.98 |    0.01 |
 ```
 
 Medium benchmark, query 100 rows of 10 columns using 5 parameters
 ``` ini
 |                   Method |     Mean |    Error |   StdDev |   Median | Ratio | RatioSD |
 |------------------------- |---------:|---------:|---------:|---------:|------:|--------:|
-|         EFCoreLinqMedium | 616.5 µs | 18.87 µs | 40.62 µs | 601.4 µs |  1.92 |    0.20 |
-| EFCoreInterpolatedMedium | 504.9 µs |  6.29 µs | 12.99 µs | 507.9 µs |  1.58 |    0.12 |
-|          EFCoreRawMedium | 528.7 µs | 13.43 µs | 29.76 µs | 517.9 µs |  1.64 |    0.13 |
-| EFCoreCompliedLinqMedium | 425.8 µs |  9.47 µs | 19.98 µs | 419.7 µs |  1.32 |    0.10 |
-|             DapperMedium | 414.8 µs | 11.65 µs | 25.33 µs | 405.8 µs |  1.29 |    0.15 |
-|             RepoDbMedium | 355.3 µs |  9.48 µs | 20.40 µs | 354.4 µs |  1.11 |    0.12 |
-|              DbMapMedium | 322.5 µs | 12.69 µs | 26.49 µs | 313.0 µs |  1.00 |    0.00 |
-|        HandwrittenMedium | 333.5 µs | 12.94 µs | 28.41 µs | 316.9 µs |  1.04 |    0.10 |
+|         EFCoreLinqMedium | 616.5 Âµs | 18.87 Âµs | 40.62 Âµs | 601.4 Âµs |  1.92 |    0.20 |
+| EFCoreInterpolatedMedium | 504.9 Âµs |  6.29 Âµs | 12.99 Âµs | 507.9 Âµs |  1.58 |    0.12 |
+|          EFCoreRawMedium | 528.7 Âµs | 13.43 Âµs | 29.76 Âµs | 517.9 Âµs |  1.64 |    0.13 |
+| EFCoreCompliedLinqMedium | 425.8 Âµs |  9.47 Âµs | 19.98 Âµs | 419.7 Âµs |  1.32 |    0.10 |
+|             DapperMedium | 414.8 Âµs | 11.65 Âµs | 25.33 Âµs | 405.8 Âµs |  1.29 |    0.15 |
+|             RepoDbMedium | 355.3 Âµs |  9.48 Âµs | 20.40 Âµs | 354.4 Âµs |  1.11 |    0.12 |
+|              DbMapMedium | 322.5 Âµs | 12.69 Âµs | 26.49 Âµs | 313.0 Âµs |  1.00 |    0.00 |
+|        HandwrittenMedium | 333.5 Âµs | 12.94 Âµs | 28.41 Âµs | 316.9 Âµs |  1.04 |    0.10 |
 ```
 
 Large benchmark, query 1,000 rows of 22 columns using 10 parameters
